@@ -1,0 +1,18 @@
+<button mat-raised-button color="primary" [routerLink]="['/signup']"> signup</button>
+
+<button mat-raised-button color="primary" [routerLink]="['/login']">login</button>
+
+
+<button mat-raised-button color="primary" [routerLink]="['/dashboard']"> dashboard</button>
+
+<div *ngIf="(auth.user | async)">
+user is logged in
+
+<button mat-raised-button color="primary" (click)="logout()">
+    logout</button>
+
+</div>
+
+<div *ngIf="!(auth.user | async)">
+user is not logged in
+</div>

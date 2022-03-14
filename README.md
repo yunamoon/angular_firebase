@@ -14,3 +14,17 @@
 4. (option) angular material or bootstrap install
 - ng add @angular/material 
 - npm install @ng-bootstrap/ng-bootstrap
+
+5. new component create
+- ng g c <컴포넌트명>
+- dashboard 
+    -> home
+    -> sign up
+    -> login 
+
+6. new serivce create
+- ng g s service services/auth
+
+7. new guard create
+- ng g guard services/auth
+    
